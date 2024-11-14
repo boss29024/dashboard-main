@@ -16,4 +16,7 @@ export default createVuetify({
   theme: {
     defaultTheme: "light",
   },
+  typography: {
+    fontFamily: "Kanit, sans-serif",
+  },
 });

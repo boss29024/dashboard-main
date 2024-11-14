@@ -6,17 +6,15 @@
                 <v-divider></v-divider>
 
                 <v-list-item link>
-                    <v-list-item-icon><v-icon>mdi-view-dashboard</v-icon></v-list-item-icon>
-                    <v-list-item-title>Dashboard</v-list-item-title>
+                    <v-list-item-title><v-icon class="pr-2">mdi-view-dashboard</v-icon>Dashboard</v-list-item-title>
                 </v-list-item>
 
                 <v-list-item link v-for="(menu, index) in menus" :key="index">
-                    <v-list-item-icon><v-icon>mdi-square</v-icon></v-list-item-icon>
-                    <v-list-item-title>{{ menu }}</v-list-item-title>
+                    <v-list-item-title><v-icon class="pr-2">mdi-square</v-icon>{{ menu }}</v-list-item-title>
                 </v-list-item>
 
                 <!-- Help Card -->
-                <v-card class="mt-6">
+                <v-card class="mt-6 ml-6">
                     <v-card-title>Need help?</v-card-title>
                     <v-card-subtitle>CoinCap API 2.0</v-card-subtitle>
                     <v-card-actions>
@@ -104,10 +102,10 @@ const breadcrumbs = [
 
 // Cryptocurrency cards
 const cryptos = ref([
-    { name: 'Bitcoin', price: '38,992.4', change: 1.32 },
-    { name: 'Ethereum', price: '2,763.07', change: 5.98 },
-    { name: 'Solana', price: '90.96', change: -3.62 },
-    { name: 'Dogecoin', price: '0.13', change: 3.94 }
+    { name: 'Bitcoin', price: '', change: 0 },
+    { name: 'Ethereum', price: '', change: 0 },
+    { name: 'Solana', price: '', change: 0 },
+    { name: 'Dogecoin', price: '', change: 0 }
 ]);
 
 // Data table headers
@@ -158,5 +156,9 @@ onMounted(async () => {
 .v-navigation-drawer {
     box-shadow: none !important;
     border: none !important;
+}
+
+.custom-font {
+    font-family: 'Kanit', sans-serif;
 }
 </style>

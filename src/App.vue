@@ -9,3 +9,8 @@
 <script setup>
 import Dashboard from './pages/Dashboard.vue';
 </script>
+<style scoped>
+* {
+  font-family: 'Kanit', sans-serif !important;
+}
+</style>
